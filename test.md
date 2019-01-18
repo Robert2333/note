@@ -81,5 +81,64 @@ public class Apple{
 }
 ```
 
+#### 3.1 获取属性值
+
+```java
+ Field[] fields = cls.getDeclaredFields();//不管私有还是public的都可以取到
+ for (int i=0;i<fields.length;i++){//遍历
+               try {
+                   //得到属性
+                   Field field = fields[i];
+                   //打开私有访问
+                   field.setAccessible(true);
+                   //获取属性
+                   String name = field.getName();
+                   //获取属性值
+                   Object value = field.get(obj);
+                   //一个个赋值
+                   nameVlues += field.getName()+":"+value+",";
+               } catch (IllegalAccessException e) {
+                   e.printStackTrace();
+               }
+```
+
+#### 3.2 获取方法
+
+```java
+      Method[] methods = clz.getDeclaredMethods();//clz:instance of Class
+      for (Method method : methods) {
+         System.out.println("方法名：" + method.getName());
+         //获取本方法所有参数类型，存入数组
+         Class<?>[] getTypeParameters = method.getParameterTypes();
+         if (getTypeParameters.length == 0) {
+            System.out.println("此方法无参数");
+         }
+         for (Class<?> class1 : getTypeParameters) {
+            String parameterName = class1.getName();
+            System.out.println("参数类型：" + parameterName);
+         }
+         System.out.println("****************************");
+      }
+
+```
+
+* 调用方法
+
+```java
+public class Test {
+
+   public void hello(String s) {
+      System.out.println(s);
+   }
+
+   public static void main(String[] args) throws IllegalAccessException, InstantiationException, NoSuchMethodException, InvocationTargetException {
+      Class clz = Test.class;
+      Object o = clz.newInstance();
+      Method m = clz.getDeclaredMethod("hello", String.class);
+      m.invoke(o, "222");
+   }
+}
+```
+
 
 
