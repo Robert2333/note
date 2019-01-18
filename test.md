@@ -36,5 +36,50 @@ public URL  getResource (String name);
 public InputStream  getResourceAsStream (String name);
 ```
 
+#### 2.2 Java中的.class和getClass的区别
+
+* getClass\(\)是Object类的方法，它可以获得一个实例的类型类。它是**运行时根据实际实例确定，getClass\(\)是动态而且是final的**。
+
+> A a=new B\(\);//A为接口，B为实例，那么getClass\(\)获取到的class为B
+
+* .class编译时确定，所以上述例子拿到的class就是A
+
+### 3.反射
+
+通过反射创建类对象主要有两种方式：通过 Class 对象的 newInstance\(\) 方法、通过 Constructor 对象的 newInstance\(\) 方法
+
+\(1\).通过 Class 对象的 newInstance\(\) 方法。
+
+```java
+Class clz = Apple.class;
+Apple apple = (Apple)clz.newInstance();
+```
+
+\(2\).通过 Constructor 对象的 newInstance\(\) 方法
+
+```java
+Class clz = Apple.class;
+Constructor constructor = clz.getConstructor();
+Apple apple = (Apple)constructor.newInstance();
+```
+
+通过 Constructor 对象创建类对象可以选择特定构造方法，而通过 Class 对象则只能使用默认的无参数构造方法。下面的代码就调用了一个有参数的构造方法进行了类对象的初始化。
+
+```java
+Class clz = Apple.class;
+Constructor constructor = clz.getConstructor(String.class, int.class);
+Apple apple = (Apple)constructor.newInstance("红富士", 15);
+```
+
+对应的类为
+
+```java
+public class Apple{
+    public Apple(String name,int number){
+        ....
+    }
+}
+```
+
 
 
