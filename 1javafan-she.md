@@ -1,10 +1,10 @@
-# 1. Java反射
+# 1.Java反射
 
-### 1.类初始化
+## 1.类初始化
 
 > 类初始化时类加载的最后一步，前面的类加载的过程中，除了在加载截断用户应用程序可以通过自定义_**类加载器**_参与之外，其余动作完全由虚拟机主导和控制。
 
-### 2.类加载器
+## 2.类加载器
 
 **通过一个类的全限定名来获取描述此类的二进制流。**
 
@@ -18,8 +18,6 @@
 
 * classpath就是存放.class等编译后文件的路径
 
----
-
 tomca之类的web容器就不采用双亲委托机制（servlet规范中的建议），为了保证
 
 * 依赖独立，不受影响
@@ -27,7 +25,7 @@ tomca之类的web容器就不采用双亲委托机制（servlet规范中的建�
 * 某些类库可以共享
 * 部署的类库可以共享。
 
-#### 2.1 JAVA获取classpath路径：
+### 2.1 JAVA获取classpath路径：
 
 ClassLoader 提供了两个方法用于从装载的类路径中取得资源：
 
@@ -36,7 +34,7 @@ public URL  getResource (String name);
 public InputStream  getResourceAsStream (String name);
 ```
 
-#### 2.2 Java中的.class和getClass的区别
+### 2.2 Java中的.class和getClass的区别
 
 * getClass\(\)是Object类的方法，它可以获得一个实例的类型类。它是**运行时根据实际实例确定，getClass\(\)是动态而且是final的**。
 
@@ -44,7 +42,7 @@ public InputStream  getResourceAsStream (String name);
 
 * .class编译时确定，所以上述例子拿到的class就是A
 
-### 3.反射
+## 3.反射
 
 通过反射创建类对象主要有两种方式：通过 Class 对象的 newInstance\(\) 方法、通过 Constructor 对象的 newInstance\(\) 方法
 
@@ -81,7 +79,7 @@ public class Apple{
 }
 ```
 
-#### 3.1 获取属性值
+### 3.1 获取属性值
 
 ```java
  Field[] fields = cls.getDeclaredFields();//不管私有还是public的都可以取到
@@ -102,7 +100,7 @@ public class Apple{
                }
 ```
 
-#### 3.2 获取方法
+### 3.2 获取方法
 
 ```java
       Method[] methods = clz.getDeclaredMethods();//clz:instance of Class
@@ -138,6 +136,4 @@ public class Test {
    }
 }
 ```
-
-
 
