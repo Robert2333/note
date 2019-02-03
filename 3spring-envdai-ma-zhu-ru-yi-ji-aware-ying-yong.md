@@ -4,7 +4,7 @@
 
 | AWARE | 作用 |
 | :--- | :--- |
-| ApplicationAware | 能获取spring context调用容器的服务 |
+| ApplicationContextAware | 能获取spring context调用容器的服务 |
 | BeanNameAware | 提供对BeanName进行操作 |
 | ApplicationEventPublisherAware | 主要用于事件的发布 |
 | BeanClassLoadAware | 相关的类加载器 |
