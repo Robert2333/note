@@ -11,4 +11,6 @@
   * [5.spring cloud知识](5.springcloud.md)
 * [4.Netty](4netty.md)
   * [4.1 ChanelOption.class](4netty/41-chaneloptionclass.md)
+* [5.Java多线程编程](5javaduo-xian-cheng-bian-cheng.md)
+  * [5.1 Volatile变量](5javaduo-xian-cheng-bian-cheng/51-volatilebian-liang.md)
 
