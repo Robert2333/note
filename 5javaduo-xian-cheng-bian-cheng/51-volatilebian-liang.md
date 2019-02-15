@@ -11,11 +11,11 @@ volatile变量类似于如下同步类（但是下面的同步类可见性比vol
 ```java
 public class SynchronizedInteger{
     private int value;
-    
+
     public synchronized int get(){
         return value;
     }
-    
+
     public synchronized void set(int value){
         this.value=value;
     }
