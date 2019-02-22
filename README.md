@@ -18,6 +18,7 @@
 * [ ] 人工智能聊天机器人（重要）
 
 * [ ] java底层知识（主要但不仅仅为effective java,java并发编程,map底层结构,类的设计模式）（重要）
+
 * [ ] redis项目实战
 * [ ] mybaits源码分析
 * [ ] zookeeper入门及学习

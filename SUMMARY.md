@@ -9,4 +9,5 @@
   * [3.spring ENV代码注入以及AWARE应用](3spring-envdai-ma-zhu-ru-yi-ji-aware-ying-yong.md)
   * [4.注解知识以及@PostConstruct](4zhu-jie-zhi-shi-yi-53ca-postconstruct.md)
   * [5.spring cloud知识](5.springcloud.md)
+* [4.Java中的equals](4javazhong-de-equals.md)
 
