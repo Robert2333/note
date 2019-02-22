@@ -35,5 +35,11 @@
 
 ### [5.Java多线程编程](/5javaduo-xian-cheng-bian-cheng.md)
 
+### [6.Linux命令](/6linuxming-ling.md)
+
+### [7.SandBox使用](/7sandboxshi-yong.md)
+
+### [8.Java中的equals](/4javazhong-de-equals.md)
+
 
 
