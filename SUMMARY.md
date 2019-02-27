@@ -15,4 +15,5 @@
   * [5.1 Volatile变量](5javaduo-xian-cheng-bian-cheng/51-volatilebian-liang.md)
 * [6.Linux命令](6linuxming-ling.md)
 * [7.SandBox使用](7sandboxshi-yong.md)
+* [8.Java集合框架（collection）](8javaji-he-kuang-jia-ff08-collection.md)
 
