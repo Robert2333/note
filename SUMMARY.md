@@ -19,4 +19,6 @@
   * [8.1 HashMap](8javaji-he-kuang-jia-ff08-collection/81-hashmap.md)
 * [9.maven](9maven.md)
   * [9.1 maven中的scope](9maven/91-mavenzhong-de-scope.md)
+* [10.Java多线程](10javaduo-xian-cheng.md)
+  * [10.1 Thread类](10javaduo-xian-cheng/101-threadlei.md)
 
