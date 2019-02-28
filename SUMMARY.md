@@ -21,4 +21,5 @@
   * [9.1 maven中的scope](9maven/91-mavenzhong-de-scope.md)
 * [10.Java多线程](10javaduo-xian-cheng.md)
   * [10.1 Thread类](10javaduo-xian-cheng/101-threadlei.md)
+  * [10.2 锁🔐](10javaduo-xian-cheng/102-suo-d83d-dd10.md)
 
