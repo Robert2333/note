@@ -16,4 +16,7 @@
 * [6.Linux命令](6linuxming-ling.md)
 * [7.SandBox使用](7sandboxshi-yong.md)
 * [8.Java集合框架（collection）](8javaji-he-kuang-jia-ff08-collection.md)
+  * [8.1 HashMap](8javaji-he-kuang-jia-ff08-collection/81-hashmap.md)
+* [9.maven](9maven.md)
+  * [9.1 maven中的scope](9maven/91-mavenzhong-de-scope.md)
 
